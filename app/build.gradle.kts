@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.hilt)
     kotlin("kapt")
+    alias(libs.plugins.google.services)
 }
 
 android {
@@ -85,6 +86,19 @@ dependencies {
 
     implementation(libs.androidx.navigation.fragment) // For fragment navigation
     implementation(libs.androidx.navigation.ui)       // For BottomNavigationView + Navigation
+
+    // Firebase bom
+    implementation(platform(libs.firebase.bom))
+
+    // Firebase analytics
+    implementation(libs.firebase.analytics)
+
+    // Firebase authentication
+    implementation(libs.firebase.auth)
+
+    // Google Play services
+    implementation(libs.play.services.auth)
+
 
     // Testing
     testImplementation(libs.junit)

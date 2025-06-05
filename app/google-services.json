@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "324796061146",
+    "project_id": "cinetail",
+    "storage_bucket": "cinetail.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324796061146:android:ffa2859f3ffdb0e24a5ce3",
+        "android_client_info": {
+          "package_name": "com.ankit.cinetail"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeNsmY9xIeTdSpYamxRQk9WQGfAUPz0OY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

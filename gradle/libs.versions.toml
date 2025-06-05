@@ -1,5 +1,6 @@
 [versions]
 agp = "8.10.1"
+firebaseBom = "33.14.0"
 groupie = "2.10.1"
 kotlin = "2.0.21"
 coreKtx = "1.16.0"
@@ -12,6 +13,7 @@ activity = "1.10.1"
 constraintlayout = "2.2.1"
 hilt = "2.52"
 glide = "4.16.0"
+playServicesAuth = "21.3.0"
 retrofit = "2.11.0"
 okhttp = "4.12.0"
 hiltCompiler = "2.52"
@@ -20,6 +22,9 @@ lifecycle = "2.9.1" # or latest stable
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-auth = { module = "com.google.firebase:firebase-auth" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -36,6 +41,7 @@ hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.r
 glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
 
 # Retrofit
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
 
@@ -64,3 +70,4 @@ androidx-navigation-ui = { group = "androidx.navigation", name = "navigation-ui-
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+google-services = { id = "com.google.gms.google-services", version = "4.4.1" }
