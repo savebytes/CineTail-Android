@@ -8,14 +8,14 @@
         android:id="@+id/mainLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
+        android:background="@color/primary_bg">
 
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Home"
+            tools:text="Home"
             android:textColor="@color/primary_text_color"
             android:textSize="18.sp"
             android:letterSpacing="0.05"

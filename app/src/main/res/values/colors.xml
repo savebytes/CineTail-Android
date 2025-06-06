@@ -4,7 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FFFF0000</color>
 
-    <color name="primary_bg">#EEF4ED</color>
+    <color name="primary_bg">#FFFFFF</color>
     <color name="secondary_bg">#4AEF2F</color>
     <color name="card_bg">#DCEAFF</color>
     <color name="primary_text_color">#0B2545</color>
@@ -12,5 +12,7 @@
     <color name="accent_color">#8DA9C4</color>
 
     <color name="transparent">#00000000</color>
+
+    <color name="outline_btn_stroke">#E1E1E1</color>
 
 </resources>

@@ -21,4 +21,11 @@
         <item name="android:textSize">12.sp</item>
     </style>
 
+    <style name="SecondaryTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/quicksand_semibold</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="color">@color/red</item>
+    </style>
+
 </resources>

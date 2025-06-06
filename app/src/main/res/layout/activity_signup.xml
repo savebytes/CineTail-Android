@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_bg"
+        android:rotationX="-154"
+        tools:context=".ui.auth.SignupActivity">
+
+        <LinearLayout
+            android:id="@+id/googleAuthBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20.dp"
+            android:background="@drawable/outline_btn_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:rotationX="4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/googleIcon"
+                android:layout_width="24.dp"
+                android:layout_height="24.dp"
+                android:layout_marginHorizontal="10.dp"
+                android:layout_marginVertical="10.dp"
+                android:contentDescription="@string/google_icon"
+                android:src="@drawable/ic_google" />
+
+            <TextView
+                android:id="@+id/googleAuthTextView"
+                style="@style/SecondaryTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_with_google"
+                android:textColor="@color/primary_text_color" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/logOut"
+            android:layout_width="50.dp"
+            android:layout_height="50.dp"
+            android:layout_marginTop="30.dp"
+            android:background="@color/accent_color"
+            app:layout_constraintEnd_toEndOf="@+id/googleAuthBtn"
+            app:layout_constraintStart_toStartOf="@+id/googleAuthBtn"
+            app:layout_constraintTop_toBottomOf="@+id/googleAuthBtn" />
+
+        <View
+            android:id="@+id/getUser"
+            android:layout_width="50.dp"
+            android:layout_height="50.dp"
+            android:layout_marginTop="30.dp"
+            android:background="@color/accent_color"
+            app:layout_constraintEnd_toEndOf="@+id/logOut"
+            app:layout_constraintStart_toStartOf="@+id/logOut"
+            app:layout_constraintTop_toBottomOf="@+id/logOut" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

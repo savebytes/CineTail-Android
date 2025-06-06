@@ -12,7 +12,20 @@
           "package_name": "com.ankit.cinetail"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "324796061146-2evq3lib8p9hrlcea1j7rs3ee00bh1h4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ankit.cinetail",
+            "certificate_hash": "70cb7a4a906c69f92e320c0b0b97645c2be58ef7"
+          }
+        },
+        {
+          "client_id": "324796061146-0fbf2dkd5k8knirthjmcfubhdauoe8iq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDeNsmY9xIeTdSpYamxRQk9WQGfAUPz0OY"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "324796061146-0fbf2dkd5k8knirthjmcfubhdauoe8iq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

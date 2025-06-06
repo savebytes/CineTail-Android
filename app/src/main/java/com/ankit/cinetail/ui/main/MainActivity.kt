@@ -5,6 +5,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
+import com.ankit.cinetail.R
 import com.ankit.cinetail.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -26,6 +27,12 @@ class MainActivity : AppCompatActivity() {
 
         // Setup bottom navigation with navController
         binding.bottomNavigation.setupWithNavController(navController)
+
+        val result = "Hello from MainActivity"
+        supportFragmentManager.setFragmentResult("home_request_key", Bundle().apply {
+            putString("home_data_key", result)
+        })
+
 
     }
 }

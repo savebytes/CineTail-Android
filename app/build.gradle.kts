@@ -99,6 +99,11 @@ dependencies {
     // Google Play services
     implementation(libs.play.services.auth)
 
+    // Google Credential Manager
+    implementation(libs.androidx.credentials)
+    implementation(libs.googleid)
+    //noinspection GradleDependency
+    implementation(libs.androidx.credentials.play.services.auth)
 
     // Testing
     testImplementation(libs.junit)
