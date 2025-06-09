@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/primary_bg"
-        android:rotationX="-154"
+        android:rotationX="-0"
         tools:context=".ui.auth.SignupActivity">
 
         <LinearLayout
@@ -20,7 +20,7 @@
             android:background="@drawable/outline_btn_bg"
             android:gravity="center"
             android:orientation="horizontal"
-            android:rotationX="4"
+            android:rotationX="0"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
