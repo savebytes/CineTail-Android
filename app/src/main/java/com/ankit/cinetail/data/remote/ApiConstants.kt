@@ -1,7 +1,7 @@
 package com.ankit.cinetail.data.remote
 
 object ApiConstants {
-    const val BASE_URL = "https://api.themoviedb.org/3/"
+    const val BASE_URL = "https://imdb236.p.rapidapi.com/api/imdb/"
     const val IMAGE_BASE_URL = "https://image.tmdb.org/t/p/"
     const val POSTER_SIZE_W500 = "w500"
     const val BACKDROP_SIZE_W780 = "w780"
@@ -14,6 +14,7 @@ object ApiConstants {
 
 object ApiEndPoints {
 
+    const val GENRES = "genres"
 
 
 }

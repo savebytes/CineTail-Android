@@ -11,4 +11,8 @@ class SharedPrefRepository  @Inject constructor(
     suspend fun setLoginStatus(status: Boolean) {
         preferenceHelper.setLoggedIn(status)
     }
+
+    suspend fun setUserName(name: String) {
+        preferenceHelper.setUserName(name)
+    }
 }

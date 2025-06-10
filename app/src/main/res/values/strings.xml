@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CineTail</string>
+    <string name="app_name">Cine Tail</string>
     <string name="home">Home</string>
     <string name="search">Search</string>
     <string name="favorites">Favorites</string>
@@ -48,4 +48,6 @@
     </string>
     <string name="google_icon">Google Icon</string>
     <string name="login_with_google">Login with Google</string>
+    <string name="your_ultimate_movie_companion">Your Ultimate Movie Companion</string>
+    <string name="v1_0">v1.0</string>
 </resources>

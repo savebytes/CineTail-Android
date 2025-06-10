@@ -6,13 +6,12 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.lifecycleScope
 import com.ankit.cinetail.R
 import com.ankit.cinetail.databinding.ActivitySignupBinding
 import com.ankit.cinetail.ui.main.MainActivity
-import com.google.firebase.auth.FirebaseUser
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class SignupActivity : AppCompatActivity() {
@@ -36,7 +35,6 @@ class SignupActivity : AppCompatActivity() {
         binding.googleAuthBtn.setOnClickListener {
             viewModel.signIn(this)
             Toast.makeText(this, "Google Signup Clicked", Toast.LENGTH_SHORT).show()
-
         }
 
         binding.logOut.setOnClickListener {
@@ -48,17 +46,26 @@ class SignupActivity : AppCompatActivity() {
             Toast.makeText(this, viewModel.getCurrentUser().toString(), Toast.LENGTH_SHORT).show()
 
         }
-
-
     }
 
     private fun observer() {
         viewModel.authState.observe(this) { user ->
             if (user != null) {
+                // Update login status in DataStore
+                lifecycleScope.launch {
+                    viewModel.updateLoginStatus(true)
+                    viewModel.setUserName(user.displayName.toString())
+                }
+
                 // Navigate to Home screen
                 startActivity(Intent(this, MainActivity::class.java))
                 finish()
             } else {
+                // Update login status in DataStore
+                lifecycleScope.launch {
+                    viewModel.updateLoginStatus(false)
+                }
+
                 // Stay on login screen or show error
                 Toast.makeText(this, "Not signed in", Toast.LENGTH_SHORT).show()
             }

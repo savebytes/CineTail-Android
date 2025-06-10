@@ -8,6 +8,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.ankit.cinetail.data.auth.AuthManager
+import com.ankit.cinetail.data.repository.SharedPrefRepository
 import com.google.android.libraries.identity.googleid.GoogleIdTokenCredential
 import com.google.android.libraries.identity.googleid.GoogleIdTokenCredential.Companion.TYPE_GOOGLE_ID_TOKEN_CREDENTIAL
 import com.google.firebase.auth.FirebaseUser
@@ -18,7 +19,8 @@ import javax.inject.Inject
 
 @HiltViewModel
 class AuthViewModel @Inject constructor(
-    private val authManager: AuthManager
+    private val authManager: AuthManager,
+    private val sharedPrefRepository: SharedPrefRepository
 ) : ViewModel() {
 
     private val _authState = MutableLiveData<FirebaseUser?>()
@@ -51,5 +53,13 @@ class AuthViewModel @Inject constructor(
             authManager.signOut()
             _authState.postValue(null)
         }
+    }
+
+    suspend fun updateLoginStatus(isLoggedIn: Boolean) {
+        sharedPrefRepository.setLoginStatus(isLoggedIn)
+    }
+
+    suspend fun setUserName(name: String) {
+        sharedPrefRepository.setUserName(name)
     }
 }
