@@ -15,4 +15,6 @@
 
     <color name="outline_btn_stroke">#E1E1E1</color>
 
+    <color name="card_stroke_color">#8E8E93</color>
+
 </resources>

@@ -48,4 +48,8 @@
     </string>
     <string name="google_icon">Google Icon</string>
     <string name="login_with_google">Login with Google</string>
+    <string name="headline_card_image">Headline Card Image</string>
+    <string name="sci_fi">Sci-Fi</string>
+    <string name="interstellar">Interstellar</string>
+    <string name="movie_desc_demo">When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to</string>
 </resources>
