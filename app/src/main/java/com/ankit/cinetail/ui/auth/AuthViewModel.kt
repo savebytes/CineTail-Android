@@ -38,11 +38,12 @@ class AuthViewModel @Inject constructor(
                     val token = GoogleIdTokenCredential.createFrom(credential.data).idToken
                     authManager.firebaseAuthWithGoogle(token) { success, user ->
                         _authState.value = if (success) user else null
-                        Log.d("TAG", "AuthViewModel: $user")
+                        Log.d("AuthVM", "AuthViewModel: $user")
+                        Log.d("AuthVM", "AuthViewModel: Signed up Successful")
                     }
                 }
             } catch (e: Exception) {
-                Log.e("AuthViewModel", "Sign-in failed: ${e.message}")
+                Log.e("AuthVM", "Sign-in failed: ${e.message}")
                 _authState.value = null
             }
         }
@@ -51,15 +52,18 @@ class AuthViewModel @Inject constructor(
     fun logout() {
         viewModelScope.launch {
             authManager.signOut()
+            Log.d("AuthVM", "AuthViewModel: Logged Out")
             _authState.postValue(null)
         }
     }
 
     suspend fun updateLoginStatus(isLoggedIn: Boolean) {
+        Log.d("AuthVM", "AuthViewModel: Updated sharedpref value for LoginStatus")
         sharedPrefRepository.setLoginStatus(isLoggedIn)
     }
 
     suspend fun setUserName(name: String) {
+        Log.d("AuthVM", "AuthViewModel: User Name : $name")
         sharedPrefRepository.setUserName(name)
     }
 }

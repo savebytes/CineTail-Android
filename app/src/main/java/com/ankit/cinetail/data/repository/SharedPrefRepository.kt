@@ -7,6 +7,7 @@ class SharedPrefRepository  @Inject constructor(
     private val preferenceHelper: PreferenceHelper
 ) {
     val isLoggedIn = preferenceHelper.isLoggedInFlow
+    val userName = preferenceHelper.userNameFlow.toString()
 
     suspend fun setLoginStatus(status: Boolean) {
         preferenceHelper.setLoggedIn(status)

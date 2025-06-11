@@ -44,6 +44,9 @@ class HomeFragment : Fragment() {
     }
 
     private fun initView() {
+
+
+
         binding.textView.setOnClickListener {
             val intent = Intent(requireContext(), SignupActivity::class.java)
             startActivity(intent)
