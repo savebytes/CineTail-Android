@@ -51,12 +51,13 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun navigateToNextScreen(isAuthenticated: Boolean) {
-        val intent = if (isAuthenticated) {
-            Intent(this, MainActivity::class.java)
-        } else {
-            Intent(this, SignupActivity::class.java)
-        }
-        
+//        val intent = if (isAuthenticated) {
+//            Intent(this, MainActivity::class.java)
+//        } else {
+//            Intent(this, SignupActivity::class.java)
+//        }
+        val intent = Intent(this, MainActivity::class.java)
+
         startActivity(intent)
         finish()
     }

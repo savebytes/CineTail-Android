@@ -17,12 +17,6 @@
         tools:layout="@layout/fragment_search"/>
 
     <fragment
-        android:id="@+id/favoritesFragment"
-        android:name="com.ankit.cinetail.ui.main.FavoritesFragment"
-        android:label="Favorites"
-        tools:layout="@layout/fragment_favorites"/>
-
-    <fragment
         android:id="@+id/profileFragment"
         android:name="com.ankit.cinetail.ui.main.ProfileFragment"
         android:label="Profile"

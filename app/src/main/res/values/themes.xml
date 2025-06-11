@@ -28,4 +28,60 @@
         <item name="color">@color/red</item>
     </style>
 
+    <style name="HeadingRegularTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/anek_regular</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="color">@color/primary_text_color</item>
+    </style>
+
+    <style name="BodyRegularTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/anek_regular</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="color">@color/primary_text_color</item>
+    </style>
+
+    <style name="HeadingMediumTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/anek_medium</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="color">@color/primary_text_color</item>
+    </style>
+
+    <style name="BodyMediumTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/anek_medium</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="color">@color/primary_text_color</item>
+    </style>
+
+    <style name="HeadingSemiBoldTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/anek_semibold</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="color">@color/primary_text_color</item>
+    </style>
+
+    <style name="BodySemiBoldTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/anek_semibold</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="color">@color/primary_text_color</item>
+    </style>
+
+    <style name="HeadingBoldTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/anek_bold</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="color">@color/primary_text_color</item>
+    </style>
+
+    <style name="BodyBoldTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/anek_bold</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="color">@color/primary_text_color</item>
+    </style>
+
 </resources>

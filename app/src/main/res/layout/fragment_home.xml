@@ -10,20 +10,38 @@
         android:layout_height="match_parent"
         android:background="@color/primary_bg">
 
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Home"
-            android:textColor="@color/primary_text_color"
-            android:textSize="18.sp"
-            android:letterSpacing="0.05"
-            android:fontFamily="@font/quicksand_medium"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+        <include
+            android:id="@+id/demoLayout"
+            layout="@layout/layout_headline_card"
+            android:layout_marginTop="50.dp"
+            android:layout_height="320.dp"
+            android:layout_width="320.dp"
+            android:layout_marginHorizontal="20.dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <include
+            android:id="@+id/demoLayout2"
+            layout="@layout/layout_item_card"
+            android:layout_marginTop="19dp"
+            android:layout_height="250.dp"
+            android:layout_width="110.dp"
+            android:layout_marginHorizontal="20.dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/demoLayout"/>
+
+        <include
+            android:id="@+id/demoLayout3"
+            layout="@layout/layout_actor_card"
+            android:layout_marginTop="19dp"
+            android:layout_height="150.dp"
+            android:layout_width="150.dp"
+            android:layout_marginHorizontal="20.dp"
+            app:layout_constraintStart_toEndOf="@+id/demoLayout2"
+            app:layout_constraintTop_toTopOf="@+id/demoLayout2"
+            app:layout_constraintBottom_toBottomOf="@+id/demoLayout2"/>
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
 

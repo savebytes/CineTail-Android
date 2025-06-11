@@ -54,4 +54,9 @@
     <string name="sci_fi">Sci-Fi</string>
     <string name="interstellar">Interstellar</string>
     <string name="movie_desc_demo">When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to</string>
+    <string name="poster_image">Poster Image</string>
+    <string name="star_image">Star Image</string>
+    <string name="_2014">2014</string>
+    <string name="_3h_3m">3h 3m</string>
+    <string name="shahrukh_khan">Shahrukh Khan</string>
 </resources>

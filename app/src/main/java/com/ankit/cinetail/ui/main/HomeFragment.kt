@@ -39,7 +39,7 @@ class HomeFragment : Fragment() {
         ) { _, bundle ->
             val message = bundle.getString("home_data_key")
             Log.d("HomeFragment", "Received message: $message")
-            binding.textView.text = message  // Display it in the TextView
+            //binding.textView.text = message  // Display it in the TextView
         }
     }
 
@@ -47,10 +47,10 @@ class HomeFragment : Fragment() {
 
 
 
-        binding.textView.setOnClickListener {
-            val intent = Intent(requireContext(), SignupActivity::class.java)
-            startActivity(intent)
-        }
+//        binding.textView.setOnClickListener {
+//            val intent = Intent(requireContext(), SignupActivity::class.java)
+//            startActivity(intent)
+//        }
     }
 
 }

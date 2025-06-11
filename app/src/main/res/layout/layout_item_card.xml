@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_poster_card_bg"
+        android:clipToOutline="true"
+        android:layout_marginHorizontal="20.dp"
+        android:layout_marginVertical="20.dp">
+
+        <ImageView
+            android:id="@+id/cardImage"
+            android:layout_width="match_parent"
+            android:layout_height="150.dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="1.5dp"
+            android:contentDescription="@string/poster_image"
+            android:src="@drawable/intertellar_poster"
+            android:clipToOutline="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintDimensionRatio="2:3"
+            />
+
+        <ImageView
+            android:id="@+id/starIcon"
+            android:layout_width="12dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="6.dp"
+            android:layout_marginStart="9.dp"
+            android:contentDescription="@string/star_image"
+            android:src="@drawable/ic_star"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardImage"/>
+
+
+        <TextView
+            android:id="@+id/textRating"
+            style="@style/BodyRegularTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            tools:text="8.5"
+            android:textColor="@color/primary_text_color"
+            app:layout_constraintBottom_toBottomOf="@+id/starIcon"
+            app:layout_constraintStart_toEndOf="@+id/starIcon"
+            app:layout_constraintTop_toTopOf="@+id/starIcon" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/BodyMediumTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9.dp"
+            android:text="@string/interstellar"
+            android:textColor="@color/primary_text_color"
+            app:layout_constraintStart_toStartOf="@+id/spacer"
+            app:layout_constraintTop_toBottomOf="@+id/textRating" />
+
+        <View
+            android:id="@+id/spacer"
+            android:layout_width="match_parent"
+            android:layout_height="30.dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"/>
+
+        <TextView
+            android:id="@+id/year"
+            style="@style/BodyRegularTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9.dp"
+            android:layout_marginBottom="9.dp"
+            android:text="@string/_2014"
+            android:textColor="@color/secondary_text_color"
+            app:layout_constraintStart_toStartOf="@+id/spacer"
+            app:layout_constraintTop_toBottomOf="@+id/spacer"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <View
+            android:id="@+id/dotDivider"
+            android:layout_width="4.dp"
+            android:layout_height="4.dp"
+            android:layout_marginStart="5.dp"
+            android:background="@drawable/dot_bg"
+            app:layout_constraintStart_toEndOf="@+id/year"
+            app:layout_constraintTop_toTopOf="@+id/year"
+            app:layout_constraintBottom_toBottomOf="@+id/year" />
+
+        <TextView
+            android:id="@+id/duration"
+            style="@style/BodyRegularTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9.dp"
+            android:text="@string/_3h_3m"
+            android:textColor="@color/secondary_text_color"
+            app:layout_constraintStart_toEndOf="@+id/dotDivider"
+            app:layout_constraintTop_toTopOf="@+id/dotDivider"
+            app:layout_constraintBottom_toBottomOf="@+id/dotDivider"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+
