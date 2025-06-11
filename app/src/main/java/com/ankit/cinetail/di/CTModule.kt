@@ -9,6 +9,8 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStoreFile
 import com.ankit.cinetail.data.auth.AuthManager
 import com.ankit.cinetail.data.local.PreferenceHelper
+import com.ankit.cinetail.data.remote.ApiConstants
+import com.ankit.cinetail.data.remote.MovieApiService
 import com.google.firebase.auth.FirebaseAuth
 import dagger.Module
 import dagger.Provides
