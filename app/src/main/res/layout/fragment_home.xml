@@ -42,6 +42,18 @@
             app:layout_constraintBottom_toBottomOf="@+id/demoLayout2"/>
 
 
+        <include
+            android:id="@+id/demoLayout4"
+            layout="@layout/layout_genre_item"
+            android:layout_marginTop="19dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="10.dp"
+            app:layout_constraintStart_toEndOf="@+id/demoLayout3"
+            app:layout_constraintTop_toTopOf="@+id/demoLayout3"
+            app:layout_constraintBottom_toBottomOf="@+id/demoLayout3"/>
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
 
